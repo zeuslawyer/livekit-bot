@@ -1,0 +1,26 @@
+{
+    "name": "nodejs",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "download-files": "tsc && node agent.js download-files",
+        "dev": "tsx agent.ts dev"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.4.1",
+    "devDependencies": {
+        "tsx": "^4.20.6",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "@livekit/agents": "1.x",
+        "@livekit/agents-plugin-openai": "1.x",
+        "@livekit/noise-cancellation-node": "^0.1.9",
+        "dotenv": "^17.2.3"
+    }
+}
